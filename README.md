@@ -1,9 +1,9 @@
-### Tugas UAS 2210020095
+## Tugas UAS 2210020095
 Nama : Pradana Iqbal Anshori</br>
 NRP : 2210020095</br>
 Kelas : 5A NonReg SI BJM</br>
 
-## Preview :
+### Preview :
 <p>
 <img src="https://user-images.githubusercontent.com/26644007/212778975-36bfac84-9273-4005-97e9-89137c898dd8.png" width="200" />
 <img src="https://user-images.githubusercontent.com/26644007/212779016-f3bce673-5e45-4b41-8536-b0b03b778777.png" width="200" />

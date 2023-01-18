@@ -15,20 +15,33 @@ class _LuasPersegi extends State<LuasPersegi> {
   String lebar = "0";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Luas Persegi',
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-          textAlign: TextAlign.center,
+    return Stack(
+      children: <Widget>[
+        Image.asset(
+          "assets/images/PastelBlue.jpg",
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          fit: BoxFit.cover,
         ),
-      ),
-      body: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          persegi(),
-        ],
-      ),
+        Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            backgroundColor: const Color.fromARGB(83, 0, 102, 255),
+            title: const Text(
+              'Luas Persegi',
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          body: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              persegi(),
+            ],
+          ),
+        )
+      ],
     );
   }
 

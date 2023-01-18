@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class MainPage extends StatefulWidget {
-  const MainPage({super.key});
+class ProfileDev extends StatefulWidget {
+  const ProfileDev({super.key});
 
   @override
-  State<MainPage> createState() => _MainPageState();
+  State<ProfileDev> createState() => _ProfileDevState();
 }
 
-class _MainPageState extends State<MainPage> {
+class _ProfileDevState extends State<ProfileDev> {
   double coverHeight = 200;
   double profilHeight = 144;
 

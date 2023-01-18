@@ -13,12 +13,53 @@ Kelas : 5A NonReg SI BJM</br>
 
 ### Preview (update_3):
 <p>
-<img src="https://user-images.githubusercontent.com/26644007/213218934-ca431b2d-4021-4aac-aecd-5bdad65d9b3e.png" width="150" />
+<img src="https://user-images.githubusercontent.com/26644007/213221578-d7d4b7f8-1aac-4e8e-9eb9-317880e44c3a.png" width="150" />
 <img src="https://user-images.githubusercontent.com/26644007/213218570-199c6eba-ed96-48e1-b9fe-67947becc7b3.png" width="150" />
 <img src="https://user-images.githubusercontent.com/26644007/213218644-552bb8bd-ede2-4c66-8323-85e50904faed.png" width="150" />
-<img src="https://user-images.githubusercontent.com/26644007/213218519-0cd07e2c-7764-40f0-835a-5bbab877e436.png" width="150" />
-<img src="https://user-images.githubusercontent.com/26644007/213218685-9158262e-bc91-4732-a6a8-e8ccc835ac6a.png" width="150" />
+<img src="https://user-images.githubusercontent.com/26644007/213222206-46fd3f7f-e549-4788-bd30-a112f5c16b4f.png" width="150" />
+<img src="https://user-images.githubusercontent.com/26644007/213221548-2f0f2ca8-dc5d-413f-842d-8fc259b8aeff.png" width="150" />
 </p>
+
+### Update_3 Code -> Backgroud Image :
+```
+return Stack(
+  children: <Widget>[
+    Image.asset(
+      "assets/images/PastelBlue.jpg",
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
+      fit: BoxFit.cover,
+      ),
+    Scaffold(
+      backgroundColor: Colors.transparent, //wajib
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(83, 0, 102, 255),
+        ),
+      body : (),//Body
+    ),
+  ],
+);
+```
+### Update_3 Code -> SplashScreen :
+```
+import 'dart:async';
+
+void initState() {
+    super.initState();
+    openSplashScreen();
+  }
+ 
+ openSplashScreen() async {
+    return Timer(
+      const Duration(seconds: 5), //Dulasi SplashScreen
+      () {
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (BuildContext context) => menuAwal()));
+      },
+    );
+  }
+
+```
 
 ### import :
 ```

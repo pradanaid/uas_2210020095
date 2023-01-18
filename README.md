@@ -51,7 +51,7 @@ void initState() {
  
  openSplashScreen() async {
     return Timer(
-      const Duration(seconds: 5), //Dulasi SplashScreen
+      const Duration(seconds: 5), //Durasi SplashScreen
       () {
         Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (BuildContext context) => menuAwal()));
